@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 
+
 export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = useState(false);
   return (
@@ -13,6 +14,7 @@ export default function Navbar() {
             >
               teal Tailwind Starter Kit
             </a>
+            
             <button
               className="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
               type="button"
