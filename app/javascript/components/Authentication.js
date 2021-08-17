@@ -28,7 +28,16 @@ export default class Authentication extends Component {
                                     <Home {...props} loggedInStatus={this.state.loggedInStatus}/>
                                 )}
                             />
-                            <Route exact path={"/dashboard"} component={Dashboard}/>
+                            <Route 
+                                exact 
+                                path={"/dashboard"}
+                                    render={props => (
+                                        <Dashboard
+                                            {...props}
+                                            loggedInStatus={this.state.loggedInStatus} 
+                                        /> 
+                                    )} 
+                            />
                         </Switch>
                     </BrowserRouter>
                 </div>
