@@ -67,8 +67,6 @@ export default class Login extends Component {
             onChange={this.handleChange}
             required
           />
-
-
           <button type="submit">Login</button>
         </form>
       </div>
