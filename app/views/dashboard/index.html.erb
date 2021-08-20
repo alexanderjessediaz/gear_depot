@@ -1,10 +1,7 @@
-import React from 'react'
-
-export default function SideBar() {
-    return(
-        <>
-            <div class="relative min-h-screen md:flex">
-
+<body class="bg-gray-300">
+    <%= react_component(Navbar) %>
+    
+    <div id="sidebard-top-container" class="relative min-h-screen md:flex">
                 <div class="bg-gray-800 text-gray-100 flex justify-between md:hidden">
                     <a href="#" class="block p-4 text-white font-bold">Gear Repository</a>
 
@@ -30,13 +27,5 @@ export default function SideBar() {
                         <a href="#" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700 hover:text-white">Pricing</a>
                     </nav>    
                 </div>
-            
             </div>
-            {/* main-console */}
-            <div>
-
-            </div>
-        </>
-
-    )
-}
+</body>

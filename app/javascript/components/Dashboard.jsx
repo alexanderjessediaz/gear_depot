@@ -4,7 +4,7 @@ import axios from 'axios';
 export default class Dashboard extends Component {
     constructor(props) {
         super(props);
-
+        
         this.handleLogoutClick = this.handleLogoutClick.bind(this)
     }
 
@@ -19,7 +19,6 @@ export default class Dashboard extends Component {
     render() {
         return (
             <div>
-                <h1>Home</h1>
                 <h1>Status: {this.props.loggedInStatus}</h1>
                 <button onClick={() => this.handleLogoutClick()}>Logout</button>
             </div>
